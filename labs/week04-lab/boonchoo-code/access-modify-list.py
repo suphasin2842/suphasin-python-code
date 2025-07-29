@@ -44,7 +44,7 @@ print(f"Removed: {removed_fruit}")  # apple
 print(fruits)  # ['pear', 'cherry', 'orange', 'grape', 'kiwi']
 
 removed_fruit = fruits.pop(1)    # Remove and return element at index 1
-print(f"Removed: {removed_fruit}")  # cherry
+print(f"Removed: {removed_fruit}")  # We remove cherry
 print(fruits)  # ['pear', 'orange', 'grape', 'kiwi']
 
 del fruits[0]                    # Delete element at index 0
