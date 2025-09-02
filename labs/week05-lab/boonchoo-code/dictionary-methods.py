@@ -3,7 +3,7 @@ scores = {"Alice": 85, "Bob": 92, "Charlie": 78, "Diana": 96, "Eve": 89}
 
 # Length and membership
 print(f"Number of students: {len(scores)}")
-print(f"Is Alice in scores? {'Alice' in scores}")
+print(f"Is Alice in scores? {'Alice' in scores}") #in เอาไว้เช็คว่ามีของในดิกป่าว
 print(f"Is 'Frank' in scores? {'Frank' in scores}")
 
 # Getting keys, values, items

@@ -40,19 +40,19 @@ inventory = {
 
 print(f"Original inventory: {inventory}")
 
-# Adding new items
+# Adding new items เพิ่มของในดิก
 inventory["grapes"] = 40
 inventory["strawberries"] = 15
 print(f"After adding items: {inventory}")
 
-# Updating existing items
-inventory["apples"] = 45  # Reduce apple count
-inventory["bananas"] += 20  # Add more bananas
+# Updating existing items แก้ไขข้อมูล
+inventory["apples"] = 45  # Reduce apple count แก้ข้อมูลแอปเปิ้ล
+inventory["bananas"] += 20  # Add more bananas เพิ่มกล้วยไปอีก20ลูก
 print(f"After updates: {inventory}")
 
 # Using update() method
-new_items = {"mangoes": 35, "pineapples": 10}
-inventory.update(new_items)
+new_items = {"mangoes": 35, "pineapples": 10, "apple": 25} #เราสร้าง new item เพื่อสร้างดิกใหม่ไปอัปเข้าตัวเก่า
+inventory.update(new_items) #เพิ่มของในดิกผ่านตัวupdateได้
 print(f"After bulk update: {inventory}")
 
 # Update with another syntax
@@ -63,7 +63,7 @@ print(f"After keyword update: {inventory}")
 removed_item = inventory.pop("strawberries")  # Remove and return value
 print(f"Removed {removed_item} strawberries")
 
-del inventory["pineapples"]  # Remove without returning
+del inventory["pineapples"]  # Remove without returning dle ลบได้เลยผ่านคีย์แต่ไม่สามารถเอาคีย์มาทำงานได้อีก
 print(f"After deletions: {inventory}")
 
 # Remove last item (Python 3.7+)
