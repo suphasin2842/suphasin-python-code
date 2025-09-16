@@ -1,7 +1,7 @@
 # Parent class (Base class)
 class Animal:
     
-    def __init__(self, name, species):
+    def __init__(self, name, species): #คอนดักเตอร์เม็ดตอด
         self.name = name
         self.species = species
         self.is_alive = True
