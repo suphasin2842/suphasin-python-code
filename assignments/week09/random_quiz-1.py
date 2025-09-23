@@ -25,3 +25,31 @@ Example
     Congratulations! You won in 3 attempts!
 
 """
+
+import random
+
+def test_random():
+    random_number = random.randint(1, 20)
+    live=6
+    while True:
+       
+        number = int(input(" Enter your number: "))
+        if(number == random_number):
+            print()
+            print(f"Good job! my name is brian, i'm 24 year old ,i'm from korea.(You won in {live} attempts!)")
+            break
+        elif(number < random_number):
+            live-=1
+            print()
+            print(f"you number is less then random number (your life now {live})")
+        elif (number > random_number):
+            live-=1
+            print()
+            print(f"you number is more then random number (your life now {live})")
+        if(live==0):
+            print()
+            print(f"your live is {live} Game over")
+            break
+    print()
+    print(f"THE RANDOM NUMBER ARE {random_number}")
+test_random()
